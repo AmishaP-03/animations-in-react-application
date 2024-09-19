@@ -26,4 +26,5 @@ c) bounce = 1 -> there will be a bounce, bounce = 0 -> no bounce
 
 3. variants prop
 a) Help us defined animation states which can be reused by other props.
+b) Helps to trigger animations deep inside a component tree. If variants are set to props (animate, exit etc) in parent component, they can be triggered from child components as well provided variants with the same key are defined there.
 
