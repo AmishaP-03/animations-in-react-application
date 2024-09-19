@@ -28,3 +28,6 @@ c) bounce = 1 -> there will be a bounce, bounce = 0 -> no bounce
 a) Help us defined animation states which can be reused by other props.
 b) Helps to trigger animations deep inside a component tree. If variants are set to props (animate, exit etc) in parent component, they can be triggered from child components as well provided variants with the same key are defined there.
 
+4. transition: {staggerChildren: 0.05}
+staggerChildren animation config is used to control the delay by child elements of the element it is applied on will start their animations. Here, 0.05s will be the delay b/w animations of child elements
+
