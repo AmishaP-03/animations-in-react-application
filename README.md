@@ -31,3 +31,6 @@ b) Helps to trigger animations deep inside a component tree. If variants are set
 4. transition: {staggerChildren: 0.05}
 staggerChildren animation config is used to control the delay by child elements of the element it is applied on will start their animations. Here, 0.05s will be the delay b/w animations of child elements
 
+5. scale can be an array of values as well. Each value will denote a step/keyframe.
+scale: [0.8, 1] -> first go to 0.8 of actual then, then actual size
+
