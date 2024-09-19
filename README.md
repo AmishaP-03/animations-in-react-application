@@ -43,3 +43,7 @@ Default value = sync -> Plays all the animation inside of AnimatedPresence compo
 
 wait -> Animation for disappearance of 1st element is completed first, then other the 2nd animation starts
 
+8. Animating shared elements like tab indicator. Each tab will have its own indicator which will be visible when it is selected. We want to have a smooth transition while selecting diff tab options.
+
+<motion.div layoutId="tab-indicator" className="active-tab-indicator" />
+Framer motion will detect whenever we render another elt with the same layoutId in a different place of our page and it will automatically play a smooth animation
