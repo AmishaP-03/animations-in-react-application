@@ -37,3 +37,9 @@ scale: [0.8, 1] -> first go to 0.8 of actual then, then actual size
 6. layout prop. If we set this prop, framer motion will automatically animate layout changes in the concerned component.
 Use case - If we have a list of items, and the 1st item is removed, then this layout prop will make sure that the remaining items transition upwards in the list in an animated fashion.
 
+7. Nested animations in a single component
+<AnimatedPresence mode="wait">
+Default value = sync -> Plays all the animation inside of AnimatedPresence component simultaneously. If one elt disappears while the other appears, both the animations are played at the same time.
+
+wait -> Animation for disappearance of 1st element is completed first, then other the 2nd animation starts
+
