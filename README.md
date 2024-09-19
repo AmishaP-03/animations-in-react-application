@@ -24,3 +24,6 @@ a) duration - The animation will now take 3 secs to go from initial state to end
 b) type - describes the type of animation that will be played. Default = spring
 c) bounce = 1 -> there will be a bounce, bounce = 0 -> no bounce
 
+3. variants prop
+a) Help us defined animation states which can be reused by other props.
+
