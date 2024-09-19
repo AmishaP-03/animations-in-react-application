@@ -52,13 +52,13 @@ body {
 }
 
 #hero-image {
-  width: 20rem;
   max-width: 40%;
   position: absolute;
   bottom: 10%;
-  left: 25%;
+  left: calc(50% - 20rem);
   object-fit: cover;
   filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.5));
+  align-items: center;
 }
 
 #welcome-header-content {

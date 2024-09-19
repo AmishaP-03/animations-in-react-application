@@ -13,7 +13,7 @@ To overcome these cons, we move towards 3rd party libraries like Framer motion w
 npm install framer-motion
 
 -----Pointers on how to use it?-----
-1. Import 'motion' from framer-motion and replace the element we want to animate with `motion.${HTMLElt}`. For example: <div> = <motion.div>. This will still render div in the DOM but it will be a div with extra capabilities that cen be controlled by framer motion to animate it in an highly performant way.
+1. Import 'motion' from framer-motion and replace the element we want to animate with `motion.${HTMLElt}`. For example: <div> = <motion.div>. This will still render div in the DOM but it will be a div with extra capabilities that can be controlled by framer motion to animate it in an highly performant way.
 
 2. animate prop. <motion.div animate={{x: somevalue, y: somevalue}}>
 It accepts an object which describes the animation we want to play, It re-renders the element whenever the value passed to animate prop changes.
@@ -51,3 +51,7 @@ If the AnimatePresence component has multiple <motion.${HTMLElt}> elements, then
 Framer motion will detect whenever we render another elt with the same layoutId in a different place of our page and it will automatically play a smooth animation
 
 Use case: When the number on badge changes (i.e when no of active, completed tasks changes), we want animations on the number badges.
+
+9. useScroll hook - Helps us listen to scroll events and find out how far has the user scrolled.
+
+10. useTransport hook - Allows us to transform random values to values we can use in animation.
