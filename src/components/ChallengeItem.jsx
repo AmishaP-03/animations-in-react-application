@@ -28,7 +28,7 @@ export default function ChallengeItem({
   }
 
   return (
-    <li>
+    <motion.li>
       <article className="challenge-item">
         <header>
           <img {...challenge.image} />
@@ -64,6 +64,6 @@ export default function ChallengeItem({
           )}
         </div>
       </article>
-    </li>
+    </motion.li>
   );
 }

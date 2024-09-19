@@ -34,3 +34,6 @@ staggerChildren animation config is used to control the delay by child elements 
 5. scale can be an array of values as well. Each value will denote a step/keyframe.
 scale: [0.8, 1] -> first go to 0.8 of actual then, then actual size
 
+6. layout prop. If we set this prop, framer motion will automatically animate layout changes in the concerned component.
+Use case - If we have a list of items, and the 1st item is removed, then this layout prop will make sure that the remaining items transition upwards in the list in an animated fashion.
+
