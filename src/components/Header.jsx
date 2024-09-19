@@ -21,7 +21,7 @@ export default function Header() {
       <header id="main-header">
         <h1>Your Challenges</h1>
         <motion.button 
-          whileHover={{scale: 1.1}} /**Applies animation to button when user hovers over it */
+          whileHover={{scale: 1.1, backgroundColor: '#8b11f0'}} /**Applies animation to button when user hovers over it */
           transition={{type: 'spring', stiffness: 500}} /**Configuration for any animation applied on this button element. Here: adds a bounce to button */
           onClick={handleStartAddNewChallenge} 
           className="button"
