@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import NewChallenge from './NewChallenge.jsx';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function Header() {
   const [isCreatingNewChallenge, setIsCreatingNewChallenge] = useState();
@@ -20,9 +20,14 @@ export default function Header() {
 
       <header id="main-header">
         <h1>Your Challenges</h1>
-        <button onClick={handleStartAddNewChallenge} className="button">
+        <motion.button 
+          whileHover={{scale: 1.1}} /**Applies animation to button when user hovers over it */
+          transition={{type: 'spring', stiffness: 500}} /**Configuration for any animation applied on this button element. Here: adds a bounce to button */
+          onClick={handleStartAddNewChallenge} 
+          className="button"
+        >
           Add Challenge
-        </button>
+        </motion.button>
       </header>
     </>
   );
