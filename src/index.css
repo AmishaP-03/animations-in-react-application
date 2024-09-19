@@ -282,21 +282,6 @@ main {
   margin-left: 0.25rem;
 }
 
-/** Helps to define steps of an animation from start */
-@keyframes silde-up-fade-in {
-  /**Beginning state */
-  0% {
-    transform: translateY(30px); /** Push modal down */
-    opacity: 0; /** Invisible at the beginning */
-  }
-
-  /** Ending state */
-  100% {
-    transform: translateY(0); /** No longer push modal down */
-    opacity: 1; /** Visible at the end */
-  }
-}
-
 .challenge-item-description {
   margin: 0;
 }
@@ -324,9 +309,6 @@ main {
   width: 30rem;
   max-width: 90%;
   z-index: 10;
-  animation: silde-up-fade-in 0.3s ease-in forwards; /** Will be triggered a soon as modal is rendered in the DOM */
-  /** forwards -> Let us stay on the end state when the animation is done */
-  /** Above is an example of css animation */
 }
 
 .modal h2 {
