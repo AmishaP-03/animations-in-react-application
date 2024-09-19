@@ -280,12 +280,6 @@ main {
   display: inline-block;
   font-size: 0.85rem;
   margin-left: 0.25rem;
-  transition: transform 0.3s ease-in; /* Applies CSS animation to transform property, animations occur at an interval of 300ms, ease in etc decides the speed at which animation happens */
-  /** Above is an example of CSS transition */
-}
-
-.challenge-item-details.expanded .challenge-item-details-icon {
-  transform: rotate(180deg);
 }
 
 /** Helps to define steps of an animation from start */
