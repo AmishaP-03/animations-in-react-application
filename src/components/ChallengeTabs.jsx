@@ -9,7 +9,9 @@ function Tab({ isSelected, onSelect, badgeCaption, children }) {
         onClick={onSelect}
       >
         {children}
-        <Badge caption={badgeCaption}></Badge>
+        <Badge key={badgeCaption} caption={badgeCaption}></Badge>
+        {/* When the value of key changes, react will destroy the existing elemet and create/render a new one in the DOM */}
+        {/** When the component is re-rendered in the DOM, any animations defined there would play again */}
       </button>
       {isSelected && <motion.div layoutId="tab-indicator" className="active-tab-indicator" />}
     </li>

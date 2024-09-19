@@ -43,7 +43,11 @@ Default value = sync -> Plays all the animation inside of AnimatedPresence compo
 
 wait -> Animation for disappearance of 1st element is completed first, then other the 2nd animation starts
 
+If the AnimatePresence component has multiple <motion.${HTMLElt}> elements, then each of these elements should mandatorily have a key prop. Eg: key="fallback"
+
 8. Animating shared elements like tab indicator. Each tab will have its own indicator which will be visible when it is selected. We want to have a smooth transition while selecting diff tab options.
 
 <motion.div layoutId="tab-indicator" className="active-tab-indicator" />
 Framer motion will detect whenever we render another elt with the same layoutId in a different place of our page and it will automatically play a smooth animation
+
+Use case: When the number on badge changes (i.e when no of active, completed tasks changes), we want animations on the number badges.
